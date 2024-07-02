@@ -5,7 +5,7 @@
   "main": "0-main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js 0-main.js"
   },
   "dependencies": {
     "nodemon": "^2.0.12"
