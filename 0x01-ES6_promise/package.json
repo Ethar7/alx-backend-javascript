@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
   "author": "",
   "license": "ISC"
 }
