@@ -1,6 +1,5 @@
 function handleResponseFromAPI(promise) {
-  const state = { status: 200, body: 'success' };
-  
+  const state = { status: 200, body: 'success' }; 
   return promise
     .then(() => state)
     .catch((err) => err)
