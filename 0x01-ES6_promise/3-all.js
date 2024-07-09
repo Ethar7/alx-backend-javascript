@@ -1,5 +1,4 @@
-// 3-all.js
-import { uploadPhoto, createUser } from "./utils.js";
+import { uploadPhoto, createUser } from "./utils";
 
 async function handleProfileSignup() {
   try {
@@ -7,8 +6,9 @@ async function handleProfileSignup() {
       uploadPhoto(),
       createUser(),
     ]);
-    console.log(`First Name: ${userResponse.firstName}`);
-    console.log(`Last Name: ${userResponse.lastName}`);
+    console.log(`${photoResponse.body}`);
+    console.log(`${userResponse.firstName}`);
+    console.log(`${userResponse.lastName}`);
   } catch (error) {
     console.error("Signup system offline");
   }
