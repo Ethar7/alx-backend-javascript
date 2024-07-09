@@ -21,5 +21,7 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^3.0.0"
+    "_utils": "^1.0.0",
+    "_utils2": "^2.0.0"
   }
 }
