@@ -9,7 +9,7 @@ export default class Currency {
   }
 
   set code(value) {
-    this._code = code;
+    this._code = value;
   }
 
   get name() {
@@ -17,7 +17,7 @@ export default class Currency {
   }
 
   set name(value) {
-    this._name = name;
+    this._name = value;
   }
 
   displayFullCurrency() {
