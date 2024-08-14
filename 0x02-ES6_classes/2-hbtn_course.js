@@ -13,7 +13,7 @@ export default class HolbertonCourse {
   }
   
   set name(val) {
-    if (typeof name !== 'string') {
+    if (typeof val !== 'string') {
       throw new Error('invalid input type');
     }
     this._name = val;
@@ -24,7 +24,7 @@ export default class HolbertonCourse {
   }
   
   set length(val) {
-    if (typeof length !== 'number') {
+    if (typeof val !== 'number') {
       throw new Error('invalid input type');
     }
     this._length = val;
@@ -35,7 +35,7 @@ export default class HolbertonCourse {
   }
   
   set students(val) {
-    if (!Array.isArray(students)) {
+    if (!Array.isArray(val)) {
       throw new Error('invalid input type');
     }
     this._students = val;
