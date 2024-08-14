@@ -31,7 +31,7 @@ export default class HolbertonCourse {
   get students() {
     return this._students;
   }
-  set name(val) {
+  set students(val) {
     if (!Array.isArray(students)) {
       throw new Error('invalid input type');
     }
