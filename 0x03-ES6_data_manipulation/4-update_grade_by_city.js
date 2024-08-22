@@ -3,7 +3,7 @@ export default function updateStudentGradeByCity(arr, city, newGrades) {
     .filter((student) => student.location === city)
     .map((student) => {
       let grade = 'N/A';
-      for (let i = 0; i < newGrades.length; i++) {
+      for (let i = 0; i < newGrades.length; i += 1) {
         if (newGrades[i].studentId === student.id) {
           grade = newGrades[i].grade;
           break;
@@ -11,7 +11,7 @@ export default function updateStudentGradeByCity(arr, city, newGrades) {
       }
       return {
         ...student,
-        grade: grade
+        grade, // استخدام الاختصار
       };
     });
 }
