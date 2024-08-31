@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   const finalStr = []; // Renamed variable to follow camel case
-
+  if (!startString || !startString.length || typeof startString !== 'string') return '';
   // Iterate over each value in the set
   for (const value of set) {
     // Check if the value starts with the specified startString
