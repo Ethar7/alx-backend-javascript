@@ -6,10 +6,10 @@ export default function cleanSet(set, startString) {
     // Check if the value starts with the specified startString
     if (value.startsWith(startString)) { // Fixed method name
       // Append the rest of the string (after startString) to the cleanedValues array
-      finalStr.push(value.slice(startString.length));
+      finalStr += value.slice(startString.length) + '-'; // استخدم عامل الجمع (+)
     }
   }
 
-  // Join the cleaned values using hyphens and return the resulting string
-  return finalStr.join('-');
+    // Remove the trailing hyphen and return the resulting string
+    return finalStr.slice(0, -1); // قم بإزالة الواصلة النهائية
 }
